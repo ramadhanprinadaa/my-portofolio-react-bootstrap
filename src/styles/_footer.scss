@@ -1,0 +1,12 @@
+@import './variables';
+
+.logo {
+    font-family: $font-primary-2;
+    font-size: 25px;
+    color: $color-primary-1 !important;
+    text-shadow: $shadow-text;
+}
+
+.copyright{
+    font-family: $font-primary-3;
+}

@@ -1,0 +1,59 @@
+@import './variables';
+
+.experience-section {
+  padding-bottom: 3rem;
+}
+
+.section-title {
+  font-family: $font-primary-3;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: $color-primary-1;
+  text-shadow: $shadow-text;
+}
+
+.experience-card {
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: 2px solid $color-primary-2;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .experience-img {
+    width: 100%;
+    height: auto;
+    max-height: 120px;
+    object-fit: contain;
+    padding: 10px;
+  }
+
+  .card-body {
+    padding: 1rem 1.5rem;
+  }
+
+  .experience-buttons {
+    margin-top: 1rem;
+
+    .btn {
+      font-weight: 500;
+      padding: 0.5rem 1.25rem;
+      border-radius: 30px;
+    }
+
+    .btnA {
+      background-color: $color-primary-bootstrap;
+      color: white;
+      
+      &:hover {
+        background-color: white;
+        color: $color-primary-bootstrap;
+        border-style: double;
+        border-color: $color-primary-bootstrap;
+      }
+    }
+  }
+}

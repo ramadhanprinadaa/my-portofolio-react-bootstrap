@@ -1,0 +1,50 @@
+// =========================
+// Navbar Styles
+// =========================
+@import './variables';
+
+.navbar-text {
+  font-family: $font-primary-3;
+
+  .logo {
+    font-family: $font-primary-2;
+    font-size: 35px;
+    color: $color-primary-1 !important;
+    text-shadow: $shadow-text;
+  }
+
+  .nav-links {
+    .nav-link {
+      color: $color-white;
+      font-weight: 1000;
+      transition: color 0.1s ease;
+      text-shadow: $shadow-text;
+
+      &:hover {
+        color: $color-primary-1;
+        text-shadow: $shadow-text;
+      }
+
+      &.active {
+        color: $color-primary-1;
+        text-shadow: $shadow-text;
+      }
+    }
+  }
+
+  .connect-button {
+    background-color: $color-primary-1;
+    color: white;
+    border-style: double;
+    border-color: #000;
+    font-weight: 1000;
+    text-shadow: $shadow-text;
+
+    &:hover {
+      background-color: white;
+      color: $color-primary-1;
+      border-style: double;
+      border-color: $color-primary-1;
+    }
+  }
+}

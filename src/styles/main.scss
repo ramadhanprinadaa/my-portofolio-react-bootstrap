@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=DM+Sans&family=Fira+Sans&family=Fascinate+Inline&family=Carattere&display=swap');
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Custom SCSS files
+@import 'variables';
+@import 'navbar';
+@import 'hero';
+@import 'about';
+@import 'project';
+@import 'experience';
+@import 'footer';
+
+
+
+// $theme-colors: (
+//   'info': tomato,
+//   'danger': teal
+// );

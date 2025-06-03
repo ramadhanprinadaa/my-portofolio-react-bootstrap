@@ -1,0 +1,66 @@
+@import './variables';
+
+.about-section {
+  padding: 40px 0;
+  background-color: white;
+  max-width: 1140px;
+  margin: 0 auto;
+  box-shadow: $shadow-box;
+  border-radius: 12px;
+
+  // Optional jika ingin tampil "naik"
+  // position: relative;
+  // z-index: 1;
+
+  .section-title {
+    font-family: $font-primary-3;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $color-primary-1;
+    text-shadow: $shadow-text;
+    margin-bottom: 30px;
+  }
+
+  .section-card {
+    background-color: $color-white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    border: 2px solid $color-primary-2;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); // Soft shadow
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); // Stronger shadow on hover
+    }
+    
+    @media (min-width: 768px) {
+      width: calc(33.33% - 15px);
+    }
+  }
+
+  h4 {
+    font-family: $font-primary-3;
+    color: $color-primary-2;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  p, ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: $color-grey;
+    text-align: justify;
+  }
+
+  ul {
+    padding-left: 20px;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+}
